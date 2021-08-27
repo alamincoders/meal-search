@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Meal</title>
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body class="bg-gray">
+    <h2 class="text-center text-success mt-5 fw-bold">Are you want your favorite meals? Please! Search here </h2>
+
+
+
+    <!-- meal search button -->
+<div class="input-group mt-4 w-25 mx-auto ">
+  <input id="search-input" type="text" class="form-control fs-5" placeholder="Search for a meal">
+  <button onclick="searchFood()" class="btn btn-danger px-4 fs-5" type="button" id="search-btn">Search</button>
+</div>
+
+<div>
+    <p id="errorMessage" class="text-danger container text-center mt-5 fs-4">Something went wrong! please try again later</p>
+</div>
+
+<!-- single meal details -->
+<div id="mealDetails" class="w-50 mx-auto"></div>
+
+<!--meal search result -->
+<div id="searchResult" class="row row-cols-1 row-cols-md-3 g-4 container mx-auto mt-5"></div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="mealdb.js"></script>
+</body>
+</html>
